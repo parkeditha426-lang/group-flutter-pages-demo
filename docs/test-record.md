@@ -84,25 +84,39 @@
 
 ## 截图说明
 
-| 序号 | 截图内容 | 文件路径 | 说明 |
-|------|---------|---------|------|
-| 1 | `flutter test` 终端输出 | `docs/screenshots/flutter-test-pass.png` | 7/7 测试用例全部通过，显示 "All tests passed!" |
-| 2 | GitHub Pages 页面（上部） | `docs/screenshots/github-pages-view-top.png` | 浏览器访问 https://roux-o.github.io/group-flutter-pages-demo/，展示标题、口号、小组成员与分工 |
-| 3 | GitHub Pages 页面（下部） | `docs/screenshots/github-pages-view-bottom.png` | 展示项目功能列表、发布说明 |
+每个测试用例均对应实际运行截图，截图通过 `flutter run -d chrome` 在本地 Chrome 浏览器中获取。
+
+| 序号 | 对应用例 | 截图内容 | 文件路径 |
+|------|---------|---------|---------|
+| 1 | 用例1 | AppBar 标题 | `docs/screenshots/app-run-top.png` |
+| 2 | 用例2 | 项目标题与口号（组员A） | `docs/screenshots/app-run-top.png` |
+| 3 | 用例3 | 小组成员区域标题（组员B） | `docs/screenshots/app-run-top.png` |
+| 4 | 用例4 | 7位成员列表（组员B） | `docs/screenshots/app-run-top.png` |
+| 5 | 用例5 | 成员头像 CircleAvatar（组员B） | `docs/screenshots/app-run-top.png` |
+| 6 | 用例6 | 项目功能列表（组员C） | `docs/screenshots/app-run-bottom.png` |
+| 7 | 用例7 | 发布说明（组员D） | `docs/screenshots/app-run-bottom.png` |
+| — | 全部 | `flutter test` 终端输出 | `docs/screenshots/flutter-test-pass.png` |
 
 ### 截图内容描述
 
-**图 1：flutter test 终端输出**
+**图 1：App 运行页面 - 上半部分** (`app-run-top.png`)
+- 运行方式：`flutter run -d chrome`，本地浏览器 http://localhost:65000/
+- 包含内容：
+  - AppBar 标题「小组项目展示」→ 对应用例1
+  - 项目标题「GitHub 协作与 Flutter Web 部署展示页」→ 对应用例2
+  - 项目口号「7人小组分工协作完成 GitHub 团队开发与 Flutter Web 部署」→ 对应用例2
+  - 「小组成员与分工」区域标题 → 对应用例3
+  - 7位成员列表（组长：蒋亿乐、组员A：王小梅、组员B：唐一甜、组员C：刘昱泽、组员D：张蕴洁、组员E：杨晨曦、组员F：于昕冉）→ 对应用例4、5
+
+**图 2：App 运行页面 - 下半部分** (`app-run-bottom.png`)
+- 包含内容：
+  - 「项目功能」区域及4条功能描述 → 对应用例6
+  - 「发布说明」区域及4条发布说明 → 对应用例7
+
+**图 3：flutter test 终端输出** (`flutter-test-pass.png`)
 - 运行命令：`flutter test`
 - 结果：7/7 测试用例全部通过
 - 关键信息：`All tests passed!`
-
-**图 2：GitHub Pages 页面 - 上部**
-- 页面地址：https://roux-o.github.io/group-flutter-pages-demo/
-- 展示内容：项目标题、口号、小组成员与分工
-
-**图 3：GitHub Pages 页面 - 下部**
-- 展示内容：项目功能列表、发布说明
 
 ## 验收结论
 
